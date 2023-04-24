@@ -33,13 +33,15 @@ return {
   },
   {
     "williamboman/mason.nvim",
-    ensure_installed = {
-      "lua-language-server",
-      "pyright",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "pyright",
+      },
     },
   },
   {
     "matze/vim-move",
-    lazy = false,
+    ft = "vim-move",
   },
 }
