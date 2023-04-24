@@ -19,6 +19,18 @@ return {
     },
   },
   {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "pyright",
+        "typescript-language-server",
+        "eslint_d",
+        "prettierd",
+      },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     dependencies = {
       "jose-elias-alvarez/null-ls.nvim",
@@ -32,16 +44,7 @@ return {
     end,
   },
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "pyright",
-      },
-    },
-  },
-  {
     "matze/vim-move",
-    ft = "vim-move",
+    lazy = false,
   },
 }

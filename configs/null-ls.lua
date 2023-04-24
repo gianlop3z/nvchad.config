@@ -9,6 +9,9 @@ local b = null_ls.builtins
 local sources = {
   -- lua
   b.formatting.stylua,
+  -- web
+  b.formatting.eslint_d,
+  b.formatting.prettierd,
   -- python
   b.formatting.black,
   b.formatting.isort,
