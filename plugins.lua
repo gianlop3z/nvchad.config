@@ -13,6 +13,7 @@ return {
         "typescript",
         "tsx",
         "json",
+        "php",
         -- common
         "python",
       },
@@ -27,6 +28,9 @@ return {
         "typescript-language-server",
         "eslint_d",
         "prettierd",
+        "intelephense",
+        "phpstan",
+        "php-cs-fixer",
       },
     },
   },
@@ -46,5 +50,8 @@ return {
   {
     "matze/vim-move",
     lazy = false,
+  },
+  {
+    "folke/trouble.nvim",
   },
 }
