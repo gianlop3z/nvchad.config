@@ -1,16 +1,9 @@
-local function model_create_field(args, parent, user_args)
-  return args[1][1]
-end
-
-local function model_serializer_create_name(args, parent, user_args)
-  return args[1][1]
-end
-
 local function shared_insert(args, parent, user_args)
   return args[1][1]
 end
 
 return {
+  -- Django
   s("model.create", {
     t { "from django.db import models", "", "", "class " },
     i(1),
