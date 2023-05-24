@@ -51,8 +51,10 @@ return {
     "matze/vim-move",
     lazy = false,
   },
+  { "folke/trouble.nvim" },
   {
-    "folke/trouble.nvim",
+    "mg979/vim-visual-multi",
+    lazy = false,
   },
   {
     "folke/todo-comments.nvim",
