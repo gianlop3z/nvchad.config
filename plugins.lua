@@ -51,9 +51,16 @@ return {
     "matze/vim-move",
     lazy = false,
   },
-  { "folke/trouble.nvim" },
+  {
+    "folke/trouble.nvim",
+    lazy = false,
+  },
   {
     "mg979/vim-visual-multi",
+    lazy = false,
+  },
+  {
+    "heavenshell/vim-pydocstring",
     lazy = false,
   },
   {
