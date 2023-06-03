@@ -12,6 +12,7 @@ local sources = {
   -- web
   b.formatting.eslint_d,
   b.formatting.prettierd,
+  b.formatting.phpcsfixer,
   -- python
   b.formatting.black,
   b.formatting.isort,
