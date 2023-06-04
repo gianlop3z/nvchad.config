@@ -1,7 +1,5 @@
 local M = {}
 
-M.plugins = "custom.plugins"
-
 M.ui = {
   theme = "onenord",
   nvdash = {
@@ -9,6 +7,7 @@ M.ui = {
   },
 }
 
+M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
 
 return M

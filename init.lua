@@ -9,9 +9,6 @@ vim.g.move_key_modifier_visualmode = "C"
 vim.g.pydocstring_doq_path = "/Library/Frameworks/Python.framework/Versions/3.11/bin/doq"
 vim.g.pydocstring_formatter = "google"
 
--- options
-vim.opt.clipboard = "unnamedplus"
-
 -- diagnostics
 vim.diagnostic.config {
   virtual_text = true,
