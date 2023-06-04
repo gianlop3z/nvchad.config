@@ -21,6 +21,7 @@ M.general = {
     ["<leader>n"] = { "<cmd>NvimTreeToggle<CR>" },
     ["<leader>t"] = { "<cmd>TroubleToggle<CR>" },
     ["<leader>ax"] = { "<cmd>%bd | e#<CR>" },
+    ["<S-z>"] = { "<cmd>:JABSOpen<CR>", "show opened buffers" },
     ["<leader>X"] = {
       function()
         require("nvchad_ui.tabufline").close_buffer()
