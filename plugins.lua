@@ -64,6 +64,13 @@ return {
     lazy = false,
   },
   {
+    "matbme/JABS.nvim",
+    lazy = false,
+    config = function()
+      require("jabs").setup {}
+    end,
+  },
+  {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
