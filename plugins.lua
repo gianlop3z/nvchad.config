@@ -64,6 +64,13 @@ return {
     lazy = false,
   },
   {
+    "roobert/search-replace.nvim",
+    lazy = false,
+    config = function()
+      require("search-replace").setup {}
+    end,
+  },
+  {
     "matbme/JABS.nvim",
     lazy = false,
     config = function()
