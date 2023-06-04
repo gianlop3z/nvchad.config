@@ -1,39 +1,6 @@
 return {
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        -- default
-        "vim",
-        "lua",
-        -- web dev
-        "html",
-        "css",
-        "javascript",
-        "typescript",
-        "tsx",
-        "json",
-        "php",
-        -- common
-        "python",
-      },
-    },
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "pyright",
-        "typescript-language-server",
-        "eslint_d",
-        "prettierd",
-        "intelephense",
-        "phpstan",
-        "php-cs-fixer",
-      },
-    },
-  },
+  { "nvim-treesitter/nvim-treesitter" },
+  { "williamboman/mason.nvim" },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -80,6 +47,5 @@ return {
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-    opts = {},
   },
 }
