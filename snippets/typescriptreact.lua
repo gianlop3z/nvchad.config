@@ -115,17 +115,4 @@ return {
       "}",
     },
   }),
-  s({
-    trig = "rnss",
-    name = "react-native-stylesheet",
-    dscr = "Create and export and empty `Stylesheet`.",
-  }, {
-    t {
-      "import { Stylesheet } from 'react-native';",
-      "",
-      "export default Stylesheet.create({",
-      "\tcontainer: {},",
-      "});",
-    },
-  }),
 }
