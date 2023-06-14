@@ -10,10 +10,5 @@ vim.g.pydocstring_doq_path = "/Library/Frameworks/Python.framework/Versions/3.11
 vim.g.pydocstring_formatter = "google"
 
 -- diagnostics
-vim.diagnostic.config {
-  virtual_text = true,
-  signs = true,
-  underline = true,
-  update_in_insert = true,
-  severity_sort = false,
-}
+vim.o.updatetime = 500
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
