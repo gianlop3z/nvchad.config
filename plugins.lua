@@ -18,6 +18,10 @@ return {
     lazy = false,
   },
   {
+    "mg979/vim-visual-multi",
+    lazy = false,
+  },
+  {
     "folke/trouble.nvim",
     lazy = false,
   },
