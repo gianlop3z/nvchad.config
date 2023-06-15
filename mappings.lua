@@ -20,8 +20,7 @@ M.general = {
     ["<leader>S"] = { "<cmd>w<CR>", "save file (when caps are lock)" },
     ["<leader>n"] = { "<cmd>NvimTreeToggle<CR>" },
     ["<leader>t"] = { "<cmd>TroubleToggle<CR>" },
-    ["<leader>ax"] = { "<cmd>%bd | e#<CR>" },
-    ["<S-z>"] = { "<cmd>JABSOpen<CR>", "show opened buffers" },
+    ["<leader>ax"] = { "<cmd>%bd | e# | NvimTreeOpen<CR>" },
     ["<leader>ro"] = { "<cmd>SearchReplaceSingleBufferOpen<CR>", "search and replace in open buffer" },
     ["<leader>X"] = {
       function()
