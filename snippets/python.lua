@@ -1,6 +1,4 @@
-local function insert(args, parent, user_args)
-  return args[1][1]
-end
+local utils = require "custom.utils.snippets"
 
 return {
   -- Django
@@ -29,7 +27,7 @@ return {
       "\tdef __str__(self):",
       "\t\treturn self.",
     },
-    f(insert, { 2 }),
+    f(utils.insert, { 2 }),
   }),
   s({
     trig = "model.serializer.create",
@@ -48,13 +46,13 @@ return {
       "",
       "class ",
     },
-    f(insert, { 2 }),
+    f(utils.insert, { 2 }),
     t {
       "Serializer(serializers.ModelSerializer):",
       "\tclass Meta:",
       "\t\tmodel = ",
     },
-    f(insert, { 2 }),
+    f(utils.insert, { 2 }),
     t {
       "",
       '\t\tfields = "__all__"',
@@ -74,24 +72,24 @@ return {
       "",
       "from .serializers import ",
     },
-    f(insert, { 1 }),
+    f(utils.insert, { 1 }),
     t {
       "Serializer",
       "",
       "",
       "class ",
     },
-    f(insert, { 1 }),
+    f(utils.insert, { 1 }),
     t {
       "ViewSet(viewsets.ModelViewSet):",
       "\tqueryset = ",
     },
-    f(insert, { 1 }),
+    f(utils.insert, { 1 }),
     t {
       ".objects.all()",
       "\tserializer_class = ",
     },
-    f(insert, { 1 }),
+    f(utils.insert, { 1 }),
     t "Serializer",
   }),
 }

@@ -30,10 +30,6 @@ return {
     lazy = false,
   },
   {
-    "folke/trouble.nvim",
-    lazy = false,
-  },
-  {
     "heavenshell/vim-pydocstring",
     lazy = false,
   },

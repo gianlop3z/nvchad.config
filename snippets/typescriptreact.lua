@@ -1,6 +1,4 @@
-local function insert(args, parent, user_args)
-  return args[1][1]
-end
+local utils = require "custom.utils.snippets"
 
 return {
   -- React Native
@@ -22,7 +20,7 @@ return {
       "\t\t<View>",
       "\t\t\t<Text>Hello world from ",
     },
-    f(insert, { 1 }),
+    f(utils.insert, { 1 }),
     t {
       "</Text>",
       "\t\t</View>",
@@ -69,7 +67,35 @@ return {
       "\t\t<View>",
       "\t\t\t<Text>Hello world from ",
     },
-    f(insert, { 1 }),
+    f(utils.insert, { 1 }),
+    t {
+      "</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}",
+    },
+  }),
+  s({
+    trig = "rnffc",
+    name = "react-native-functional-component",
+    dscr = "Create `react-native` functional component",
+  }, {
+    t {
+      "import { View, Text } from 'react-native';",
+      "import styles from './styles';",
+      "",
+      "interface Props {};",
+      "",
+      "export function ",
+    },
+    i(1),
+    t {
+      "({}: Props) {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>",
+    },
+    f(utils.insert, { 1 }),
     t {
       "</Text>",
       "\t\t</View>",
@@ -83,35 +109,14 @@ return {
     dscr = "Create `react-native` functional component",
   }, {
     t {
-      "import { View, Text } from 'react-native';",
-      "import styles from './styles';",
-      "",
-      "interface Props {",
-      "\t",
-    },
-    i(2),
-    t ": ",
-    i(3),
-    t {
-      ";",
-      "}",
+      "interface Props {};",
       "",
       "export function ",
     },
     i(1),
-    t "({ ",
-    i(4),
     t {
-      " }: Props) {",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>",
-    },
-    f(insert, { 1 }),
-    t {
-      "</Text>",
-      "\t\t</View>",
-      "\t);",
+      "({}: Props) {",
+      "\treturn <></>",
       "}",
     },
   }),

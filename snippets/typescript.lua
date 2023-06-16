@@ -1,4 +1,5 @@
 return {
+  -- React Native
   s({
     trig = "rnss",
     name = "react-native-stylesheet",
@@ -11,6 +12,9 @@ return {
       "\t",
     },
     i(1),
-    t { ": {}", "});" },
+    t {
+      ": {}",
+      "});",
+    },
   }),
 }

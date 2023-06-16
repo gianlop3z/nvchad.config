@@ -17,17 +17,10 @@ M.general = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>,"] = { "<C-w>l", "window right" },
     ["<leader>s"] = { "<cmd>w<CR>", "save file" },
-    ["<leader>S"] = { "<cmd>w<CR>", "save file (when caps are lock)" },
     ["<leader>n"] = { "<cmd>NvimTreeToggle<CR>" },
-    ["<leader>t"] = { "<cmd>TroubleToggle<CR>" },
     ["<leader>ax"] = { "<cmd>%bd | e# | NvimTreeOpen<CR>" },
     ["<leader>ro"] = { "<cmd>SearchReplaceSingleBufferOpen<CR>", "search and replace in open buffer" },
-    ["<leader>X"] = {
-      function()
-        require("nvchad_ui.tabufline").close_buffer()
-      end,
-      "close buffer (when caps are lock)",
-    },
+    ["<leader>oi"] = { "<cmd>TSOrganizeImports<CR>", "organize imports in `typescript` files" },
     ["<leader>[t"] = {
       function()
         require("todo-comments").jump_next()
