@@ -13,6 +13,9 @@ M.treesitter = {
     "markdown",
     "markdown_inline",
   },
+  autotag = {
+    enable = true,
+  },
 }
 
 M.mason = {
@@ -38,10 +41,10 @@ M.nvimtree = {
           empty = "",
           empty_open = "",
           open = "",
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 }
 
 return M
