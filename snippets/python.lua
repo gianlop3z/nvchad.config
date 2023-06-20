@@ -36,23 +36,23 @@ return {
   }, {
     t {
       "from rest_framework import serializers",
-      "from apps.",
+      "",
+      "from .models import ",
     },
     i(1),
-    t ".models import ",
-    i(2),
     t {
+      "",
       "",
       "",
       "class ",
     },
-    f(utils.insert, { 2 }),
+    f(utils.insert, { 1 }),
     t {
       "Serializer(serializers.ModelSerializer):",
       "\tclass Meta:",
       "\t\tmodel = ",
     },
-    f(utils.insert, { 2 }),
+    f(utils.insert, { 1 }),
     t {
       "",
       '\t\tfields = "__all__"',
