@@ -59,4 +59,17 @@ return {
       require "custom.configs.lspconfig"
     end,
   },
+  {
+    "folke/flash.nvim",
+    keys = {
+      {
+        "s",
+        mode = { "n", "o", "x" },
+        function()
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+    },
+  },
 }
