@@ -9,12 +9,8 @@ return {
       "import { StyleSheet } from 'react-native';",
       "",
       "export default StyleSheet.create({",
-      "\t",
     },
     i(1),
-    t {
-      ": {}",
-      "});",
-    },
+    t "});",
   }),
 }

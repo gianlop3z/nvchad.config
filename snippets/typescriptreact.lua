@@ -3,39 +3,13 @@ local utils = require "custom.utils.snippets"
 return {
   -- React Native
   s({
-    trig = "rns",
-    name = "react-native-screen",
-    dscr = "Create `react-native` screen as a functional component",
-  }, {
-    t {
-      "import { View, Text } from 'react-native';",
-      "import styles from './styles';",
-      "",
-      "export function ",
-    },
-    i(1),
-    t {
-      "() {",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>Hello world from ",
-    },
-    f(utils.insert, { 1 }),
-    t {
-      "</Text>",
-      "\t\t</View>",
-      "\t);",
-      "}",
-    },
-  }),
-  s({
-    trig = "rnsapi",
+    trig = "rns.fetch",
     name = "react-native-screen-with-api-call",
     dscr = "Create `react-native` screen with an `API` call on mount",
   }, {
     t {
       "import { useState, useEffect } from 'react';",
-      "import { View, Text } from 'react-native';",
+      "import { View } from 'react-native';",
       "import styles from './styles';",
       "",
       "export function ",
@@ -65,39 +39,11 @@ return {
       "",
       "\treturn (",
       "\t\t<View>",
-      "\t\t\t<Text>Hello world from ",
+      "\t\t\t",
     },
-    f(utils.insert, { 1 }),
+    i(5),
     t {
-      "</Text>",
-      "\t\t</View>",
-      "\t);",
-      "}",
-    },
-  }),
-  s({
-    trig = "rnffc",
-    name = "react-native-functional-component",
-    dscr = "Create `react-native` functional component",
-  }, {
-    t {
-      "import { View, Text } from 'react-native';",
-      "import styles from './styles';",
       "",
-      "interface Props {};",
-      "",
-      "export function ",
-    },
-    i(1),
-    t {
-      "({}: Props) {",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>",
-    },
-    f(utils.insert, { 1 }),
-    t {
-      "</Text>",
       "\t\t</View>",
       "\t);",
       "}",
@@ -109,6 +55,9 @@ return {
     dscr = "Create `react-native` functional component",
   }, {
     t {
+      "import { View } from 'react-native';",
+      "import styles from './styles';",
+      "",
       "interface Props {};",
       "",
       "export function ",
@@ -116,7 +65,15 @@ return {
     i(1),
     t {
       "({}: Props) {",
-      "\treturn <></>",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t",
+    },
+    i(2),
+    t {
+      "",
+      "\t\t</View>",
+      "\t);",
       "}",
     },
   }),
